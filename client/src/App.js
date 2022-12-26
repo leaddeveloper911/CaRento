@@ -12,6 +12,7 @@ import EditCar from "./Pages/EditCar";
 
 
 function App() {
+  // access local storage
   const user = localStorage.getItem("user");
   
   const [token, setToken] = useState("");
