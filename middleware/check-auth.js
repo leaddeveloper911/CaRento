@@ -4,7 +4,7 @@ const jwt = require("jsonwebtoken");
 
 const verifyToken = (req, res, next) => {
   const token = JSON.parse(req.headers.authorization.split(" ")[1]); // Authorization: 'Bearer TOKEN'
-  // console.log("token", process.env.AUTH_SECRETE);
+  // console.log("token", process.env.AUTH_SECRETE)
 
   if (!token) {
     console.log("======>not token");
