@@ -23,6 +23,7 @@ const EditCar = () => {
     dispatch(editCar(values));
   };
    console.log(car)
+  // call api 
   useEffect(() => {
     dispatch(getAllcars());
     if (cars.length == 0) {
