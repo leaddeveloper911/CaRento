@@ -8,7 +8,7 @@ const stripe = require("stripe")(
 const { v4: uuidv4 } = require("uuid");
 const logger = require("../logger");
 const { createError } = require('../utills/error');
-
+// call api for get cars
 exports.getAllCars = async (req, res,next) => {
    
   // const failed = true
