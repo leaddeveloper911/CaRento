@@ -20,7 +20,7 @@ exports.registerUser = async (req, res,next) => {
      return next(error)
   }
 };
-
+// login user
 exports.loginUser = async (req, res,next) => {
   const { username, password } = req.body;
   console.log(username, password);
