@@ -6,7 +6,7 @@ function connectDb() {
     useNewUrlParser: true,
   });
   const connection = mongoose.connection;
-//db connection
+//db
   connection.on("connected", () => {
     console.log("mongoDb connection successful");
   });
